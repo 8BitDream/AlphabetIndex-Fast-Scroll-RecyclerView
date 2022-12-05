@@ -35,9 +35,7 @@ dependencies {
     implementation "com.google.android.material:material:${ANDROIDX}"
     implementation "com.jakewharton:butterknife:${BUTTERKNIFE}"
     annotationProcessor "com.jakewharton:butterknife-compiler:${BUTTERKNIFE}"
+    kapt "com.jakewharton:butterknife-compiler:${BUTTERKNIFE}"
     implementation project(':alphabetsindexfastscrollrecyclerLibrary')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-}
-repositories {
-    mavenCentral()
 }

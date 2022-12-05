@@ -1,8 +1,7 @@
 apply plugin: 'com.android.library'
-final ANDROIDX = '1.0.0'
+final ANDROIDX = '1.5.1'
+final MATERIAL = '1.7.0'
 apply plugin: 'com.github.dcendents.android-maven' // ADD THIS
-
-group='com.github.jitpack'
 
 android {
     compileSdkVersion 28
@@ -21,18 +20,9 @@ android {
     }
 }
 
-allprojects {
-    repositories {
-        jcenter()
-        maven {
-            url "https://maven.google.com"
-        }
-    }
-}
-
 dependencies {
     implementation "androidx.appcompat:appcompat:${ANDROIDX}"
-    implementation "com.google.android.material:material:${ANDROIDX}"
+    implementation "com.google.android.material:material:${MATERIAL}"
 }
 
 // build a jar with source files
